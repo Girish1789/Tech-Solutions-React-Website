@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Nunito+Sans:wght@600;700;800;900&display=swap");
+:root {
+  font-family: "DM Sans", sans-serif;
+  color: #10192d;
+  background: #f5fbf7;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  --green: #10883f;
+  --ink: #10192d;
+  --muted: #63748a;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  min-width: 320px;
+  padding-top: 80px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button {
+  font: inherit;
+}
+.site-shell {
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+@media (max-width: 420px) {
+
+  .button {
+    padding: 0 17px;
+    min-height: 49px;
+    font-size: 13px;
+  }
+
+}

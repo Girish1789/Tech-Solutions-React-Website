@@ -1,0 +1,152 @@
+/* AI Solution Section */
+
+.aisolution-section {
+  padding: 55px 20px 100px;
+  background: #fff;
+}
+
+.aisolution-container {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.aisolution-heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.aisolution-heading h2 {
+  max-width: 650px;
+  margin: 20px auto 12px;
+  color: #111827;
+  font-size: 42px;
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+.aisolution-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 12px 20px;
+  border-radius: 30px;
+  background: #dcfce7;
+  color: #07833e;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.aisolution-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 32px;
+  align-items: stretch;
+}
+
+.aisolution-card {
+  padding: 40px;
+  min-height: 380px;
+  background: #fff;
+  border: 1px solid #e0e5ef;
+  border-radius: 25px;
+  box-shadow: 0 5px 20px rgba(20, 30, 60, 0.02);
+  transition: all 0.3s ease;
+}
+
+.aisolution-icon {
+  margin-bottom: 28px;
+  color: var(--green);
+  font-size: 22px;
+}
+
+.aisolution-card h3 {
+  margin: 0 0 27px;
+  color: #171d30;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+/* Bullet points with text */
+
+.aisolution-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.aisolution-features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+  margin-bottom: 18px;
+  color: #34425d;
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.feature-check {
+  flex-shrink: 0;
+  margin-top: 3px;
+  color: var(--green);
+  font-size: 17px;
+}
+
+/* Hover effect: no social media icons */
+
+.aisolution-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--green);
+  box-shadow: 0 12px 30px rgba(75, 40, 130, 0.08);
+}
+
+/* media quiry */
+
+@media (max-width: 1050px) {
+
+  .aisolution-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .aisolution-heading h2 {
+    font-size: 34px;
+  }
+
+  .aisolution-image-box {
+    height: 220px;
+  }
+
+  .aisolution-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 24px;
+  }
+
+  .aisolution-card {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 780px) {
+
+  .aisolution-card {
+    min-height: auto;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 420px) {
+
+  .aisolution-card {
+    padding: 24px;
+    border-radius: 18px;
+  }
+
+  .aisolution-card h3 {
+    font-size: 20px;
+  }
+
+  .aisolution-features li {
+    font-size: 14px;
+  }
+}

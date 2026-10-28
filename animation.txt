@@ -1,0 +1,157 @@
+1. Pahile complete code samjun gheu
+
+jsx
+{industries.map((item, index) => (
+  <motion.div
+    key={item.title}
+    initial={{ opacity: 0, y: 100 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true, amount: 0.1 }}
+    transition={{
+      duration: 1.2,
+      delay: (index % 3) * 0.1,
+      ease: "easeOut",
+    }}
+  >
+    <div className="industries-card">
+      <div className="industries-image-box">
+        <img src={item.image} alt={item.title} />
+
+        <span className="category-badge">
+          <img src={item.category} alt="" />
+        </span>
+      </div>
+
+      <div className="industries-content">
+        <h3>{item.title}</h3>
+        <p>{item.description}</p>
+      </div>
+    </div>
+  </motion.div>
+))}
+2. Step by step explanation
+Step 1: industries.map()
+
+jsx
+{industries.map((item, index) => (
+Tujhya industries array madhye 6 cards aahet.
+map() pratyek item sathi ek card tayar karto.
+item — current card cha data, jase title, image ani description.
+index — card cha number, jo 0 pasun suru hoto.
+Udaharan:
+Card	
+index
+Healthcare	
+0
+Wells for 12 Villages	
+1
+Books & Bags for 800 Kids	
+2
+Manufacturing	
+3
+Logistics & Supply Chain	
+4
+Education	
+5
+Step 2: motion.div
+
+jsx
+<motion.div>
+Ha normal React div sarkhach aahe, pan Framer Motion mule tyala animation deta yete.
+Mhanje apan ya element la sangto ki scroll kartana kasa disaycha ani kasa move vhaycha.
+Step 3: key={item.title}
+
+jsx
+key={item.title}
+React la pratyek card olakhnyasathi key lagte.
+Udaharanarth, Healthcare card chi key "Healthcare" asel.
+Mahattvache: key mule animation hot nahi. Ti React la cards olakhnyasathi madat karte.
+Step 4: initial
+
+jsx
+initial={{ opacity: 0, y: 100 }}
+He animation suru honyapurvichi state aahe.
+opacity: 0 — card suruvatila invisible asel.
+y: 100 — card tyachya normal position peksha 100 pixels khali asel.
+Animation suru honyapurvi
+Normal position
+Card: y = 100
+Opacity = 0
+Mhanje card khali aahe ani disat nahi.
+Step 5: whileInView
+
+jsx
+whileInView={{ opacity: 1, y: 0 }}
+Ha animation cha destination aahe. Card screen madhye disayla lagla ki Framer Motion tyala ya state kade animate karto.
+opacity: 1 — card purnapane visible hoto.
+y: 0 — card tyachya original position var yeto.
+Animation purn zalyavar
+Card smoothly var yeto
+Opacity = 1 · y = 0
+Step 6: viewport
+
+jsx
+viewport={{ once: true, amount: 0.1 }}
+He settings tharavtat ki animation kadhi suru vhaychi.
+once: true — ekda animation zali ki ti punha honar nahi.
+amount: 0.1 — card cha sadharan 10% bhag viewport madhye ala ki animation trigger hou shakte.
+Jar pratyek veli scroll kartana animation punha havi asel, tar:
+
+jsx
+viewport={{ once: false, amount: 0.1 }}
+Step 7: transition
+
+jsx
+transition={{
+  duration: 1.2,
+  delay: (index % 3) * 0.1,
+  ease: "easeOut",
+}}
+Ha saglyat important part aahe. Animation kiti vel chalel, kadhi suru hoil ani kashi smooth hoil te yat tharavta.
+duration: 1.2
+
+jsx
+duration: 1.2
+Animation sadharan 1.2 seconds madhye complete hote. Value vadhavli tar animation halu hoil.
+Udaharan:
+0.5 — fast
+1.2 — slow ani smooth
+2 — ajun slow
+delay: (index % 3) * 0.1
+He cards ekamagun ek animate karte.
+Card index	
+Delay
+0	
+0 seconds
+1	
+0.1 seconds
+2	
+0.2 seconds
+3	
+0 seconds
+4	
+0.1 seconds
+5	
+0.2 seconds
+Ithe % 3 mule pratyek 3 cards nantar delay punha zero pasun suru hoto.
+ease: "easeOut"
+Animation suruvatila thodi jald ani shevati halu hote. Tyamule card achanak thamblyasarkha na disata smooth stop hoto.
+Step 8: Inner card cha HTML
+
+jsx
+<div className="industries-card">
+Ha tuzha actual card aahe. Tyachya aat:
+industries-image-box — main image ani category icon.
+industries-content — title ani description.
+industries-card — sampurna card chi styling ani hover effect.
+Apan outer motion.div var scroll animation ani inner .industries-card var hover effect thevto. Tyamule donhi effects ekmekanpasun independent rahtat.
+3. Ekandarit animation kasa work hoto?
+1. User scroll karto
+2. Card viewport madhye yeto
+whileInView trigger hoto
+3. Card khali ani invisible state madhun suru hoto
+initial
+4. Card smoothly var yeto
+whileInView + transition
+Mazi tip: Tujhya website sathi duration: 1.2, y: 100 ani ease: "easeOut" ha changla starting point aahe. Animation slow vatat asel tar duration: 0.9 try kar.
+
