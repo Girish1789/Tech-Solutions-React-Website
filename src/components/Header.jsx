@@ -16,7 +16,7 @@ const Header = () => {
   const [open, setOpen] = useState(false);
   const close = () => setOpen(false);
   return (
-    <header className="site-header fixed-header">
+    <header className="fixed-header">
       <div className="nav-wrap">
         <a
           className="brand"

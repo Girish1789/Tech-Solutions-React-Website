@@ -3,8 +3,7 @@
   min-height: calc(100vh - 88px);
   position: relative;
   isolation: isolate;
-  background: radial-gradient(ellipse at 92% 16%, #afe7c877, transparent 34%),
-    linear-gradient(110deg, #f2fbf6, #f7fcf9 50%, #eaf8ef);
+    background-color: #f6f8fa;
 }
 .hero-container {
   width: min(1200px, calc(100% - 64px));
@@ -13,7 +12,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  /* gap: clamp(42px, 5vw, 76px); */
   gap: 60px;
   padding: 18px 0 48px;
   position: relative;
@@ -39,7 +37,6 @@
 .hero-copy h1 {
   margin: 0;
   font-family: "Nunito Sans", sans-serif;
-  /* font-size: clamp(42px, 4.25vw, 64px); */
   font-size: 56px;
   line-height: 1.03;
   letter-spacing: -2.7px;
@@ -82,7 +79,7 @@
 }
 .button-primary {
   color: white;
-  background: linear-gradient(110deg, #13a34a, #08783b);
+  background: #08783b;
   box-shadow: 0 10px 18px #10883f2e;
 }
 .button-outline {
@@ -197,7 +194,6 @@
     gap: 34px;
   }
   .hero-copy h1 {
-    /* font-size: clamp(40px, 5vw, 55px); */
     font-size: 48px;
     letter-spacing: -2px;
   }
@@ -224,11 +220,16 @@
     gap: 42px;
     padding: 42px 0 66px;
   }
+  .hero-photo {
+    width: 100%;
+    height: 500px;
+    border-radius: 18px;
+    object-fit: cover;
+  }
   .hero-copy {
     max-width: 620px;
   }
   .hero-copy h1 {
-    /* font-size: clamp(42px, 9vw, 62px); */
     font-size: 52px;
     letter-spacing: -2px;
   }
@@ -242,6 +243,14 @@
   .photo-frame {
     height: min(115vw, 520px);
     border-radius: 26px;
+  }
+  .smart-card {
+    top: 8%;
+    left: -2%;
+  }
+  .cloud-card {
+    bottom: 5%;
+    right: -1%;
   }
   .meals-card {
     top: 8%;
@@ -268,6 +277,13 @@
     font-size: 10px;
     padding: 10px 12px;
     letter-spacing: 0.6px;
+  }
+
+  .hero-photo {
+    width: 100%;
+    height: 410px;
+    border-radius: 18px;
+    object-fit: cover;
   }
 
   .hero-copy h1 {

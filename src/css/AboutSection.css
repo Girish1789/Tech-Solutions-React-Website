@@ -125,7 +125,6 @@
 
 .about-content h1 {
   margin: 0 0 18px;
-
   color: #111827;
   font-size: 38px;
   line-height: 1.23;
@@ -134,7 +133,6 @@
 
 .about-description {
   margin-bottom: 28px;
-
   color: #64748b;
   font-size: 16px;
   line-height: 1.8;
@@ -158,15 +156,12 @@
   flex-shrink: 0;
   width: 38px;
   height: 38px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   background-color: #dcfce7;
   color: #07843b;
   border-radius: 12px;
-
   font-size: 21px;
 }
 
