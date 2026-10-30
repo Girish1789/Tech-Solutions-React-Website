@@ -90,8 +90,9 @@ const Hero = () => (
         <div className="photo-frame">
           <img
             className="hero-photo"
-            // src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1200&q=85"
             src="/images/hero-section.jpg"
+            fetchPriority="high"
+            loading="eager"
             alt="computer"
           />
         </div>
