@@ -70,6 +70,8 @@ const AboutSection = () => {
           <img
             src="/images/our-story-office.jpg"
             alt="Office"
+            fetchPriority="high"
+            loading="eager"
             className="about-main-image"
           />
 
@@ -89,6 +91,8 @@ const AboutSection = () => {
           <div className="about-small-image-box">
             <img
               src="/images/our-story-computer.jpg"
+              fetchPriority="high"
+              loading="eager"
               alt="Computer"
               className="about-small-image"
             />
