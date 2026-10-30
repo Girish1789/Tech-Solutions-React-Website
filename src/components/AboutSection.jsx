@@ -89,19 +89,12 @@ const AboutSection = () => {
 
           {/* Small Image */}
           <div className="about-small-image-box">
-            {/* <img
+            <img
               src="/images/our-story-computer.jpg"
               fetchPriority="high"
               loading="eager"
               alt="Computer"
               className="about-small-image"
-            /> */}
-            <img
-              src="/images/our-story-office.webp"
-              alt="Office"
-              className="about-main-image"
-              loading="lazy"
-              decoding="async"
             />
           </div>
         </motion.div>
@@ -142,7 +135,7 @@ const AboutSection = () => {
                 </div>
               );
             })}
-          </div>
+            </div>
         </motion.div>
       </div>
     </section>
