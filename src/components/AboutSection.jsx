@@ -67,11 +67,17 @@ const AboutSection = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.15 }}
         >
-          <img
+          {/* <img
             src="/images/our-story-office.jpg"
             alt="Office"
             fetchPriority="high"
             loading="eager"
+            className="about-main-image"
+          /> */}
+
+          <img
+            src="/images/our-story-office.webp"
+            alt="Office"
             className="about-main-image"
           />
 
@@ -135,7 +141,7 @@ const AboutSection = () => {
                 </div>
               );
             })}
-            </div>
+          </div>
         </motion.div>
       </div>
     </section>
