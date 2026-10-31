@@ -77,16 +77,16 @@ const GreenSection = () => {
   return (
     <div>
       <section className="green-section">
-      <motion.div
-        className="green-container"
-        initial={{ opacity: 0, scale: 0.5, z: -300, }}
-        whileInView={{ opacity: 1, scale: 1, z: 0, }}
-        viewport={{ once: true, amount: 0.3, }}
-        transition={{ duration: 1.2, ease: "easeOut", }}
-      >
+        <motion.div
+          className="green-container"
+          initial={{ opacity: 0, scale: 0.5, z: -300 }}
+          whileInView={{ opacity: 1, scale: 1, z: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 1.2, ease: "easeOut" }}
+        >
           <div className="green-content">
             <div className="green-img">
-              <img src="/images/career1.png" alt="" srcset="" />
+              <img src="/images/career1.webp" alt="Career" />
             </div>
 
             <h1>Join Our Team</h1>
@@ -191,7 +191,6 @@ const GreenSection = () => {
             </form>
           </div>
         </motion.div>
-        
       </section>
     </div>
   );

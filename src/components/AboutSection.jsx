@@ -70,8 +70,6 @@ const AboutSection = () => {
           {/* <img
             src="/images/our-story-office.jpg"
             alt="Office"
-            fetchPriority="high"
-            loading="eager"
             className="about-main-image"
           /> */}
 
@@ -95,10 +93,14 @@ const AboutSection = () => {
 
           {/* Small Image */}
           <div className="about-small-image-box">
-            <img
+            {/* <img
               src="/images/our-story-computer.jpg"
-              fetchPriority="high"
-              loading="eager"
+              alt="Computer"
+              className="about-small-image"
+            /> */}
+
+            <img
+              src="/images/our-story-computer.webp"
               alt="Computer"
               className="about-small-image"
             />
